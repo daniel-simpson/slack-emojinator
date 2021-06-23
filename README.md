@@ -90,3 +90,9 @@ docker run -v <Emoji directory>:/emoji slack-emojinator upload.py /emoji --team-
 ```sh
 docker run -v <Emoji directory>:/emoji -e SLACK_TEAM=<SLACK TEAM NAME> -e SLACK_API_TOKEN="<SLACK API TOKEN>" -e SLACK_COOKIE="<SLACK COOKIE>" slack-emojinator export.py /emoji/
 ```
+
+#### List Emoji
+
+```sh
+docker run -v <Emoji directory>:/emoji -e SLACK_TEAM=<SLACK TEAM NAME> -e SLACK_API_TOKEN="<SLACK API TOKEN>" -e SLACK_COOKIE="<SLACK COOKIE>" slack-emojinator list.py /emoji/info.json
+```
