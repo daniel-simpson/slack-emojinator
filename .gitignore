@@ -58,3 +58,5 @@ target/
 
 # Ignore environment variable file
 .env
+
+test/
